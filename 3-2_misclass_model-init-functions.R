@@ -4,17 +4,11 @@
 library(R2jags)
 
 # parameters to monitor
-jags.params <- c("m_pvac", 
-                 "m_pvacstar", 
-                 "m_psrvac",
-                 "sn0", 
+jags.params <- c("sn0", 
                  "sp0",
                  "sn1",
                  "sp1",
-                 #"p_vac", 
-                 #"p_incpov",
-                 "p_vac_star",
-                 "a0", "b0", "a[1:9]","b[1:9]"
+                 "a0", "b0", "a[1:9]","b[1:10]"
 )
 
 # Function for initializing data to be read by JAGS model
